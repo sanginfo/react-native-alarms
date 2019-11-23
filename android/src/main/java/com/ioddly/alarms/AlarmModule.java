@@ -153,7 +153,7 @@ public class AlarmModule extends ReactContextBaseJavaModule {
 
     if(repeating) {
       int interval = opts.getInt("interval");
-      manager.setInexactRepeating(type, ms, interval, pending);
+      manager.setRepeating(type, ms, interval, pending);
     } else {
       manager.set(type, ms, pending);
     }
